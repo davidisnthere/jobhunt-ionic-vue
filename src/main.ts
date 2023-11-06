@@ -22,9 +22,15 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import './theme/font.css';
+
+/* Splide JS for carousel purposes */
+import VueSplide from '@splidejs/vue-splide';
+import '@splidejs/vue-splide/css/skyblue';
 
 const app = createApp(App)
   .use(IonicVue)
+  .use(VueSplide)
   .use(router);
   
 router.isReady().then(() => {
